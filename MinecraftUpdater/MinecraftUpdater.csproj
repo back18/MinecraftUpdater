@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="SystemResource\CoreConfig.toml" />
+    <None Remove="SystemResource\log4net.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SystemResource\CoreConfig.toml" />
+    <EmbeddedResource Include="SystemResource\log4net.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\QuanLib.Minecraft\QuanLib.Minecraft\QuanLib.Minecraft.csproj" />
+  </ItemGroup>
+
 </Project>
